@@ -29,10 +29,20 @@ main{
 }
 .booking{
     padding: 10px 30px;
-    background-color: red;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: tomato;
     color: white;
     border-radius: 20px;
 }
+/* -------------------company logos--------------------- */
+.logos{
+    padding: 5px;
+    border-top: 5px solid rgba(255, 113, 113, 0.432);
+  border-bottom: 5px solid rgba(255, 113, 113, 0.432);
+  margin: 70px;
+}
+
 
 /* ------------------footer class-------------------- */
 footer{
@@ -53,4 +63,75 @@ footer{
     font-size: 15px;
     justify-content: space-evenly;
     
+}
+/* ---------------------popular products--------------------- */
+.products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 20px;
+    align-items: center;
+}
+.item{
+    /* display: flex; */
+    align-items: center;
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+    
+}
+.product-title{
+    padding-top: 20px;
+}
+.item img{
+    width: 250px;
+}
+.rating{
+    /* display: flex; */
+    padding: 5px;
+    justify-content: safe;
+}
+.rating .marked{
+    color: tomato;
+    font-size: 20px;
+}
+.rating .unmarked{
+    color: darkgrey;
+}
+.next-page{
+    width:888px;
+    color: tomato;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+}
+/* for mobile */
+@media only screen and (max-width:688px)
+{
+    .container{
+        width: 100%;
+    }
+     .products{
+        
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .item{
+        flex-direction: column;
+    }
+    .next-page{
+        text-align: center;
+    }
+    
+}
+/* tablet devices */
+@media only screen and (min-width:688px) and (max-width:992px){
+    .container{
+        width: 100%;
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .next-page{
+        text-align: center;
+    }
 }
