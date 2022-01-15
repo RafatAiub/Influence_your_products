@@ -15,7 +15,7 @@ main{
 }
 /* ----------------------first section of main----------------------- */
 .container{
-    padding-left: 50px;
+    /* padding-left: 50px; */
     padding-right: 50px;
     background-color: white;
     width: 888px;
@@ -178,7 +178,7 @@ footer{
 {
     main{
         padding-left: 50px;
-        /* padding-right: 50px; */
+        padding-right: 50px;
     }
     .container{
         
@@ -211,7 +211,7 @@ footer{
 @media only screen and (min-width:688px) and (max-width:992px){
     main{
         padding-left: 50px;
-        /* padding-right: 50px; */
+        padding-right: 50px;
     }
     .container{
         background-color: white;
