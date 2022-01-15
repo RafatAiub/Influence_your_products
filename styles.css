@@ -23,6 +23,8 @@ main{
 .left-view{
     padding-top: 40px;
     padding-left: 40px;
+    text-align: justify;
+    /* text-justify: inter-word; */
 }
 .left-view h3{
     padding-bottom: 100px;
@@ -34,6 +36,28 @@ main{
     background-color: tomato;
     color: white;
     border-radius: 20px;
+
+}
+.button{
+    position: relative;
+    animation: slide-button 5s linear 1s infinite alternate both;
+}
+@keyframes slide-button{
+    0% {left: 0px;}
+    10% {left: 20px;}
+    20% {left: 40px;}
+    30% {left: 60px;}
+    40% {left: 80px;}
+    50% {left: 100px;}
+    60% {left: 80px;}
+    70% {left: 60px;}
+    80% {left: 40px;}
+    90% {left: 20px;}
+    100% {left: 0px;}
+}
+.booking:hover{
+    background-color: white;
+    color: black;
 }
 /* -------------------company logos--------------------- */
 .logos{
@@ -42,6 +66,39 @@ main{
   border-bottom: 5px solid rgba(255, 113, 113, 0.432);
   margin: 70px;
 }
+
+/* ----------------------style of branches----------------- */
+.city{
+    display: flex;
+
+}
+.city img{
+    width: 300px;
+    height: 300px;
+    padding: 20px 50px;
+    background-color: white;
+}
+div.polaroid {
+    width: 284px;
+    padding: 10px 10px 20px 10px;
+    border: 1px solid #BFBFBF;
+    background-color: white;
+    box-shadow: 10px 10px 5px #aaaaaa;
+  }
+  
+  div.rotate_right {
+    float: left;
+    -ms-transform: rotate(7deg); /* IE 9 */
+    -webkit-transform: rotate(7deg); /* Safari */
+    transform: rotate(7deg);
+  }
+  
+  div.rotate_left {
+    float: left;
+    -ms-transform: rotate(-8deg); /* IE 9 */
+    -webkit-transform: rotate(-8deg); /* Safari */
+    transform: rotate(-8deg);
+  }
 
 
 /* ------------------footer class-------------------- */
@@ -56,10 +113,6 @@ footer{
 }
 .social-media-icons{
     padding-top: 10px;
-    align-items: center;
-    padding-left: 390px;
-    width: 100px;
-    display: flex;
     font-size: 15px;
     justify-content: space-evenly;
     
@@ -104,6 +157,12 @@ footer{
     text-align: right;
     text-decoration: none;
 }
+.next-page:hover{
+    color: black;
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+    font-size: 20px;
+
+}
 /* for mobile */
 @media only screen and (max-width:688px)
 {
@@ -121,6 +180,7 @@ footer{
     .next-page{
         text-align: center;
     }
+   
     
 }
 /* tablet devices */
@@ -134,4 +194,6 @@ footer{
     .next-page{
         text-align: center;
     }
+    
+    
 }
